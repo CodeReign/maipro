@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cfd8dc"
+    tools:context="example.com.android.maipro.HomePageActivity">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"><!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+
+        <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="#FF9800"
+            android:gravity="center_vertical|start"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="UnusedAttribute">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardView"
+        android:layout_below="@+id/toolbar"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:layout_margin="3dp"
+        app:cardElevation="3dp"
+
+        tools:ignore="UnusedAttribute">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/nameline"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:padding="3dp"
+                    android:src="@drawable/image"
+                    android:thicknessRatio="1.9"
+                    android:shape="ring"
+                    android:layout_gravity="start"
+
+                    tools:ignore="ContentDescription"
+                    android:focusable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grace_kahinga"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#7c4dff"
+                    android:textStyle="bold"
+                    android:padding="3dp"
+                    android:typeface="normal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/march_16"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                    android:textColor="#424242"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="6dp" />
+                <ImageButton
+                    android:id="@+id/share_button"
+                    android:layout_width="@dimen/cards_button_width"
+                    android:layout_height="@dimen/cards_button_height"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    app:srcCompat="@drawable/ic_favorite_black_24dp"
+                    android:layout_below="@+id/card_text"
+                    android:layout_alignParentRight="true"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:tint="#9e9e9e"
+                    android:layout_marginEnd="@dimen/md_keylines" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/landimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:adjustViewBounds="true"
+
+                android:padding="7dp"
+
+                android:scaleType="fitStart"
+                android:src="@drawable/landpicture"
+                tools:ignore="ContentDescription" />
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:backgroundTint="#e0e0e0">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.5"
+    android:orientation="vertical"
+    android:padding="7dp"
+
+    >
+
+
+            <TextView
+                android:id="@+id/property"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/property_description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:padding="3dp"/>
+
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/u25ba_has_two_boreholes"
+                      android:textSize="12sp"
+                      android:textColor="#000000"
+                      android:typeface="sans"
+                      android:padding="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/u25ba_located_10km_from_kericho"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:typeface="sans"
+                        android:padding="3dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/u25ba_shs_7_000_per_month"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:typeface="sans"
+                        android:padding="3dp"/>
+
+
+
+                </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/facebookblack"
+                    android:padding="7dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/call"
+                    android:padding="7dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    tools:ignore="ContentDescription" />
+
+
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/chat"
+                    android:padding="7dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    tools:ignore="ContentDescription" />
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/location"
+                    android:padding="7dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    tools:ignore="ContentDescription" />
+
+
+
+
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        android:layout_margin="20dp"
+        android:background="#0091ea"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+</>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+

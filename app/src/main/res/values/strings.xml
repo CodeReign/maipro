@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">maipro</string>
+    <string name="maipro">maipro</string>
+    <string name="myPro">myPro</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_with_facebook">Sign in with facebook</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="Email">Email</string>
+    <string name="grace_kahinga">Grace Kahinga</string>
+    <string name="facebook_app_id">359349067807346</string>
+    <string name="menu">menu</string>
+    <string name="search">Search</string>
+    <string name="overflow">overflow</string>
+    <string name="march_16">march 16</string>
+    <string name="property_description">Property Description:</string>
+    <string name="u25ba_has_two_boreholes">/u25BA Has Two Boreholes.</string>
+    <string name="u25ba_shs_7_000_per_month">/u25BA Shs. 7,000 per month.</string>
+    <string name="u25ba_located_10km_from_kericho">/u25BA Located 10km from Kericho.</string>
+
+</resources>

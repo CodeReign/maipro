@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cards_button_height">cards_button_height</dimen>
+    <dimen name="cards_button_width">cards_button_width</dimen>
+    <dimen name="md_keylines">md_keylines</dimen>
+</resources>
